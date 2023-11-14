@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="Logo.png">
+    <link rel="icon" href="optiverse2.png">
     <link rel="stylesheet" href="styles.css">
     <link type = "text/javascript" src="scripts.js">
-    <title>Announcements ∙ Optiverse</title>
+    <title>Homepage ∙ Optiverse</title>
 </head>
 
 <body>
@@ -19,12 +19,12 @@
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link ">Home</a></li>
+                <li><a href="#" class="link active">Home</a></li>
                 <li><a href="#" class="link">Topics</a></li>
                 <li><a href="#" class="link">Your Posts</a></li>
                 <li><a href="#" class="link">Messages</a></li>
                 <li><a href="#" class="link">Notifications</a></li>
-                <li><a href="#" class="link active">Communities</a></li>
+                <li><a href="#" class="link">Search <i class='bx bx-search-alt-2' ></i></a></li>
             </ul>
         </div>
         <div class="nav-button">
@@ -35,7 +35,14 @@
 
     <div class="wrapper">
 
-        <header>Communtities</header>
+        <div class="feed-container" id = "create-post">
+            <div class="feed-box">
+                <input type = "text" placeholder="How are you feeling today?" name="create-post">
+                <div class="feed-interactions">
+                    <button type = "submit" class = 'post-btn'>Post</button>
+                </div>
+            </div>
+        </div>
 
         <div class="feed">
             <div class="feed-container">

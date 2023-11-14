@@ -6,16 +6,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* border: 1px solid; */
 }
 body{
-    background: url("1.jpg");
+    /* background: url("1.jpg"); */
+    background-color:#051a35;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    overflow: hidden;
 }
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
 .nav{
     position: fixed;
     top: 0;
@@ -24,14 +32,21 @@ body{
     width: 100%;
     height: 100px;
     line-height: 100px;
-    /* background: linear-gradient(rgba(39,39,39, 0.6), transparent); */
-    background: url("12.jpg");
-    z-index: 3;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo{
+    width: auto;
+    height:auto
 }
 .nav-logo p{
     color: white;
     font-size: 25px;
     font-weight: 600;
+}
+.nav-logo img{
+    width: 100px;
+    height: 100px;
 }
 .nav-menu ul{
     display: flex;
@@ -75,77 +90,113 @@ body{
     display: none;
 }
 
-.wrapper{
+.form-box{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: 110vh;
-    background: rgba(39, 39, 39, 0.4);
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
     z-index: 2;
 }
-
-
-
-#create-post {
-    margin-top: 200px;
-    padding: 25px;
-}
-
-.feed-container .feed-box input{
-    width: 100%;
-    overflow-y: scroll;
-    border: none;
-    cursor: auto;
-    background-color: rgba(255, 255, 255, 0);
-}
-
-.feed-interactions .post-btn {
-    border-style: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-weight: 300;
-    background: rgba(255, 255, 255, 0.7);
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    cursor: pointer;
-    transition: .3s ease;
-}
-
-.feed-interactions .post-btn :hover{
-    background: rgba(255, 255, 255, 0.3);
-}
-
-
-
-
-
-
-.feed-container{
-    margin: 20px;
-    width: 750px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.feed-container .feed-box p{
-    padding: 15px;
-}
-
-.feed-interactions{
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
     display: flex;
-    justify-content: right;
-    padding: 20px 0;
+    flex-direction: column;
+    transition: .5s ease-in-out;
 }
-
-.feed-btn{
-    padding: 0 20px;
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
 }
-
-
-
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.609);
+}
+::-webkit-input-placeholder{
+    color: #ffffff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #cfddef;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: #fbf3e4;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
 
 
 
