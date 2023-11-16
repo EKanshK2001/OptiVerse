@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); /* POPPINS FONT */
 
-/* general */
+                /* general */
 *{  
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body{
 
 
 
-/* nav bar section */
+                /* nav bar section */
 
 .nav{
     position: fixed;
@@ -83,6 +83,8 @@ body{
     display: none;
 }
 
+             /* SEARCH BAR */
+
 .srch{
     width: 300px;
     /* max-width: 400px; */
@@ -126,7 +128,7 @@ body{
 
 
 
-/* FEED AND create-post section */
+        /* FEED AND create-post section */
 
 .wrapper{
     display: flex;
@@ -146,25 +148,29 @@ body{
 }
 
 .feed-container .feed-box textarea{
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 0px;
+    max-height: 500px;
     padding: 10px;
-    /* overflow-y: scroll;  */
     outline: none;
     border: none;
+    resize: none;
     cursor: auto;
-    overflow-wrap: break-word;
     font-size: 1.5em;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: rgba(255, 255, 255, 0);
 }
 
-/* .feed-container .feed-box textarea::-webkit-scrollbar {
-    scrollbar;
-} */
+.feed-container .feed-box textarea::-webkit-scrollbar{
+    width: 0px;
+}
 
 .feed-interactions .post-btn {
-    border-style: none;
+    border: 2px solid rgba(5, 26, 53, 0.7);
     border-radius: 5px;
+    margin: 5px 30px;
     padding: 5px 10px;
     font-weight: 300;
     background: rgba(255, 255, 255, 0.7);
@@ -180,7 +186,7 @@ body{
 }
 
 
-/* feed general */
+            /* feed general */
 
 .feed-container{
     margin: 20px;
@@ -210,7 +216,7 @@ body{
 
 
 
-/* media section */
+                /* media section */
 
 
 @media only screen and (max-width: 786px){

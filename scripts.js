@@ -1,7 +1,8 @@
-function mySearch() {
-    // document.getElementById('home').classList.remove('active');
+// auto growing textarea in create post
 
-    var searchBox = document.getElementById('search');
-    
-    searchBox.style.visibility = 'hidden';
-}
+const textarea = document.getElementById("txtArea");
+textarea.addEventListener("keyup", e => {
+    textarea.style.height = "79px";
+    let scrollHeight = e.target.scrollHeight;
+    textarea.style.height = `${scrollHeight}px`;
+});
