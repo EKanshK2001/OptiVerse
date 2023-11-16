@@ -8,7 +8,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="optiverse2.png">
     <link rel="stylesheet" href="homepage.css">
-    <link type = "text/javascript" src="scripts.js">
+    <link type="text/javascript" src="scripts.js">
     <title>Homepage ∙ Optiverse</title>
 </head>
 
@@ -19,27 +19,34 @@
         </div>
         <div class="nav-menu" id="navMenu">
             <ul>
-                <li><a href="#" class="link active" id = "home">Home</a></li>
+                <li><a href="#" class="link active" id="home">Home</a></li>
                 <li><a href="#" class="link">Topics</a></li>
                 <li><a href="#" class="link">Your Posts</a></li>
                 <li><a href="#" class="link">Messages</a></li>
                 <li><a href="#" class="link">Notifications</a></li>
-                <li><a href="#" class="link" id = "search" onclick="mySearch()">Search <i class='bx bx-search-alt-2' ></i></a></li>
+                <li>
+                    <form action="" class="srch">
+                        <input type="text" placeholder="Search..." name="Query">
+                        <button type="submit">
+                            <i class='bx bx-search-alt-2 bx-sm'></i>
+                        </button>
+                    </form>
+                </li>
             </ul>
         </div>
         <div class="nav-button">
-            <a href="loginpage.html"><button class="btn white-btn" id="loginBtn">logged-in-user</button></a>
-            <!-- <a href="loginpage.html"><button class="btn" id="registerBtn">Sign Up</button></a> -->
+            <a href="loginpage.html"><button class="btn white-btn" id="loginBtn">logout</button></a>
         </div>
     </nav>
 
     <div class="wrapper">
 
-        <form class="feed-container" id = "create-post">
+        <form class="feed-container" id="create-post">
             <div class="feed-box">
-                <textarea name="create-post" placeholder="How are you feeling today?" rows="3" cols="50" required></textarea>
+                <textarea name="create-post" placeholder="How are you feeling today?" rows="3" cols="50"
+                    required></textarea>
                 <div class="feed-interactions">
-                    <button type = "submit" class = 'post-btn'>Post</button>
+                    <button type="submit" class='post-btn'>Post</button>
                 </div>
             </div>
         </form>
@@ -134,13 +141,13 @@
                     </div>
                 </div>
             </div>
-        </>
 
+        </div>
     </div>
 
     <script src="https://kit.fontawesome.com/0f84f242f1.js" crossorigin="anonymous"></script>
 
-    <script type = "text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 
 </body>
 

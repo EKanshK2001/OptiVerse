@@ -83,6 +83,51 @@ body{
     display: none;
 }
 
+.srch{
+    width: 300px;
+    /* max-width: 400px; */
+    margin: 30px;
+    background:rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 4px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.srch input{
+    background: transparent;
+    flex: auto;
+    border: 0;
+    outline: none;
+    padding: 4px;
+    font-size: 16px;
+    color:rgba(209, 204, 204, 0.81);
+}
+
+.srch ::placeholder{
+    color:rgba(209, 204, 204, 0.81);
+}
+
+.srch button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: auto;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* FEED AND create-post section */
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -93,11 +138,6 @@ body{
     z-index: 2;
 }
 
-
-
-
-
-/* FEED AND create-post section */
 
 #create-post {
     margin-top: 200px;
