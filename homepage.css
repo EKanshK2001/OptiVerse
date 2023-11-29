@@ -36,10 +36,27 @@ body{
     background-color: rgb(5, 26, 53);
     z-index: 3;
 }
+.nav-logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.nav-logo img{
+    width: 42px;
+    height: 50px;
+    margin-top: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
 .nav-logo p{
     color: white;
     font-size: 25px;
     font-weight: 600;
+    /* border: 1px solid red; */
 }
 .nav-menu ul{
     display: flex;
